@@ -23,6 +23,7 @@ BaselineOfSeas class >> loadLepiter [
 BaselineOfSeas >> baseline: spec [
 	<baseline>
 		^ spec for: #common do: [
-			spec package: 'Seas'
+			spec package: 'Seas'.
+			spec package: 'Lcs-Seas'.
 		]
 ]
