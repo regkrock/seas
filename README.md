@@ -1,1 +1,1 @@
-# seas
+# seas## Installation```stMetacello new	repository: 'github://regkrock/seas:main/src';	baseline: 'Seas';	load```## Load Lepiter				After installing with Metacello, you will be able to execute```#BaselineOfSeas asClass loadLepiter```## Load Lepiter				After installing with Metacello, you will be able to execute```#BaselineOfSeas asClass loadLepiter```

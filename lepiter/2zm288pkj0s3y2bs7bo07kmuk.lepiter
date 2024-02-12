@@ -1,0 +1,110 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-11T10:51:30.244671-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-11T10:53:03.677676-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "WUAg337NDQCL6ZL8D/B9Mg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "SEAS has a national organization and it has 4 chapters."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-11T10:53:25.804969-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-02-11T11:19:11.888549-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KYkD5n7NDQCNWCM+D/B9Mg=="
+				},
+				"code" : "seasNational := LcsSailingClub new\r\t\t\t\t\tentityName: 'Seas National';\r\t\t\t\t\tlocation: (LcsLocation new\r\t\t\t\t\t\t\t\t\tlocationName: 'abc';\r\t\t\t\t\t\t\t\t\taddress: (LcsAddress new\r\t\t\t\t\t\t\t\t\t\t\t\tstreetNumber: 12;\r\t\t\t\t\t\t\t\t\t\t\t\tstreetName: 'Any Street';\r\t\t\t\t\t\t\t\t\t\t\t\tcityName: 'Monroe';\r\t\t\t\t\t\t\t\t\t\t\t\tsate: 'New Jersy';\r\t\t\t\t\t\t\t\t\t\t\t\tzipCode: '08831';\r\t\t\t\t\t\t\t\t\t\t\t\tyourself));\r\t\t\t\t\tcommodore: 'Karen Ruckdeschel';\r\t\t\t\t\tyourself.\r\t\t\t\t\t\r"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-02-11T10:51:30.185724-05:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-02-11T10:52:05.11104-05:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "SEAS - Society For The Education Of Saliors"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "ac571fdf-7ecd-0d00-8be8-bde70ff07d32"
+	}
+}
