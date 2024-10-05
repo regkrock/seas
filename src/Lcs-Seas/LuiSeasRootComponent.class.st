@@ -16,12 +16,15 @@ LuiSeasRootComponent class >> menuBarDefinition [
 	menuDefinition
 		addMenuComponentDefintion: (LcsMenuItemDefinition new
 			menuItemLabel: 'Home';
+			targetClass: LuiHomeArea;
 			yourself);
 		addMenuComponentDefintion: (LcsMenuItemDefinition new
 			menuItemLabel: 'Members';
+			targetClass: LuiMember;
 			yourself);
 		addMenuComponentDefintion: (LcsMenuItemDefinition new
 			menuItemLabel: 'Skippers';
+			targetClass: LuiSkippers;
 			yourself).
 	^menuDefinition
 
@@ -41,7 +44,7 @@ LuiSeasRootComponent >> initialize [
 	super initialize.
 	self componentName: 'root'.
 	self addComponent: (mainPage := LuiMainPage named: 'mainPage' on: self).
-	
+
 	self addMainNavigationMenuTo: (mainPage componentNamed: 'header/navigation').
 	(mainPage componentNamed: 'header/title') domainObject: 'Seas Monmouth'.
 
