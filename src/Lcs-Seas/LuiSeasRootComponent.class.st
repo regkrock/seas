@@ -58,9 +58,7 @@ LuiSeasRootComponent >> menuDefinition [
 { #category : #rendering }
 LuiSeasRootComponent >> renderComponentOn: html [
 	html div 
-		dataName: self componentName;
-		dataStClass: self;
-		class: self cssClassesString;
+		addCommonProperties: self;
 		with: [
 			self renderSubcomponentsOn: html ]
 ]
