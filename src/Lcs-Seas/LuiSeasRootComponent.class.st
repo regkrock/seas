@@ -1,12 +1,17 @@
 Class {
 	#name : #LuiSeasRootComponent,
-	#superclass : #LuiComponent,
+	#superclass : #LuiRoot,
 	#category : #'Lcs-Seas-Base'
 }
 
 { #category : #initialize }
+LuiSeasRootComponent class >> browserTabName [
+	^ 'Seas Monmouth'
+]
+
+{ #category : #initialize }
 LuiSeasRootComponent class >> initialize [
-	WAAdmin register: self asApplicationAt: 'Seas Monmouth'
+	WAAdmin register: self asApplicationAt: self browserTabName
 ]
 
 { #category : #menus }
@@ -43,6 +48,7 @@ LuiSeasRootComponent >> initialize [
 	| mainPage |
 	super initialize.
 	self componentName: 'root'.
+	self componentId: 'root'.
 	self addComponent: (mainPage := LuiMainPage named: 'mainPage' on: self).
 
 	self addMainNavigationMenuTo: (mainPage componentNamed: 'header/navigation').
