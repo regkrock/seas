@@ -4,16 +4,6 @@ Class {
 	#category : #'Lcs-Seas-Base'
 }
 
-{ #category : #initialize }
-LuiSeasRootComponent class >> browserTabName [
-	^ 'Seas Monmouth'
-]
-
-{ #category : #initialize }
-LuiSeasRootComponent class >> initialize [
-	WAAdmin register: self asApplicationAt: self browserTabName
-]
-
 { #category : #menus }
 LuiSeasRootComponent class >> menuBarDefinition [
 	| menuDefinition |
@@ -36,11 +26,8 @@ LuiSeasRootComponent class >> menuBarDefinition [
 ]
 
 { #category : #setup }
-LuiSeasRootComponent >> addMainNavigationMenuTo: aComponent [
-	| menuBarComponent |
-	menuBarComponent := LuiMainMenu named: 'navigation' on: aComponent.
-	aComponent addComponent: menuBarComponent.
-	menuBarComponent buildFrom: self menuDefinition
+LuiSeasRootComponent >> addMainNavigationMenuTo: aMainMenu [
+	aMainMenu buildFrom: self menuDefinition
 ]
 
 { #category : #initialize }
