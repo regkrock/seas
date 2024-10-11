@@ -5,18 +5,18 @@ Class {
 }
 
 { #category : #loading }
-BaselineOfSeas class >> loadLepiter [
-	IceRepository registry  
-		detect: [ :aRepository |
-			aRepository name = 'seas' ]
-		ifFound: [ :aRepository | 
-			| defaultDatabase currentProperties |
-			defaultDatabase := LeDatabasesRegistry defaultLogicalDatabase.
-			currentProperties := defaultDatabase properties.
-			currentProperties addRegisteredDirectory: aRepository repositoryDirectory / 'lepiter'.
-			defaultDatabase reload ]
-		ifNone: [
-			self inform: 'Repository not found.' ]
+BaselineOfSeas class >> manuallyLoadLepiter [
+
+	| repository defaultDatabase currentProperties |
+	
+	repository := IceRepository registry 
+				detect: [ :aRepository | aRepository name = 'seas' ] 
+				ifNone: [nil].
+
+	defaultDatabase := LeDatabasesRegistry defaultLogicalDatabase.
+	currentProperties := defaultDatabase properties.
+	currentProperties addRegisteredDirectory: repository repositoryDirectory / 'lepiter'.
+	defaultDatabase reload.
 ]
 
 { #category : #baseline }
