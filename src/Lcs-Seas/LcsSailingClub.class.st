@@ -6,8 +6,8 @@ Class {
 
 { #category : #accessing }
 LcsSailingClub class >> commodoreSlotDefinition [
-
-	^LcsSlotDefinition new
+	<slotDefinition>
+	^LcsAggregateSlot new
 		slotName: 'commodore';
 		addSlotType: LcsPerson;
 		yourself
@@ -16,10 +16,10 @@ LcsSailingClub class >> commodoreSlotDefinition [
 { #category : #accessing }
 LcsSailingClub >> commodore [
 
-	^self valueOfSlot: #'commodore'
+	^self getValueOfSlotNamed: 'commodore'
 ]
 
 { #category : #accessing }
 LcsSailingClub >> commodore: anObject [ 
-	self setValueOfSlotNamed: #commodore to: anObject
+	self setValueOfSlotNamed: 'commodore' to: anObject
 ]
