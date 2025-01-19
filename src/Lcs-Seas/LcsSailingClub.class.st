@@ -1,6 +1,9 @@
 Class {
 	#name : #LcsSailingClub,
 	#superclass : #LcsOrganization,
+	#instVars : [
+		'commodore'
+	],
 	#category : #'Lcs-Seas'
 }
 
