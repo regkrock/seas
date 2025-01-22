@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'commodore'
 	],
-	#category : #'Lcs-Seas'
+	#category : #'Lcs-Seas-Base'
 }
 
 { #category : #accessing }
