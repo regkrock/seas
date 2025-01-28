@@ -19,10 +19,10 @@ LcsSailingClub class >> commodoreSlotDefinition [
 { #category : #accessing }
 LcsSailingClub >> commodore [
 
-	^self getValueOfSlotNamed: 'commodore'
+	^self slotVarNamed: 'commodore'
 ]
 
 { #category : #accessing }
 LcsSailingClub >> commodore: anObject [ 
-	self setValueOfSlotNamed: 'commodore' to: anObject
+	self slotVarNamed: 'commodore' put: anObject
 ]
