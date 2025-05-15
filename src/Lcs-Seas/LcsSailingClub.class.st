@@ -10,10 +10,7 @@ Class {
 { #category : #accessing }
 LcsSailingClub class >> commodoreSlotDefinition [
 	<slotDefinition>
-	^LcsAggregateSlot new
-		slotName: 'commodore';
-		addSlotType: LcsPerson;
-		yourself
+	^LcsCommodoreSlot new
 ]
 
 { #category : #accessing }
