@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-04T09:46:58.275285-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-11-04T09:52:03.276469-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "9a8LpCf/DQCR0nmlAxueiw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "jsalexis@optonline.net\nribin10@ymail.com\nseasmonmouth@yahoo.com\nJeffanderson.proton@protonmail.com\njimbaye@optonline.com\nshlmccrd@yahoo.com\ngracecb@optonline.net\nbekvik@gmail.com\ndrdeeberry@gmail.com\ngraham.blundell@gmail.com\nWmbowlsbey@msn.com\ncjbrawley@hotmail.com\nbrock.elizabeth3@gmail.com\njbuonincontri@comcast.net\nzhi_cai@yahoo.com\nkathcalla@aol.com\nrcamppe@gmail.com\ndcargille@yahoo.com\nGailECharette@gmail.com\nl.josephcharette@gmail.com\ncaptainyasar@gmail.com\nshaziayasarhome@gmail.com\nalexchen_c@yahoo.com\nrjcro@comcast.net\nchludmail@gmail.com\nettorec8@gmail.com\nvbruner7@gmail.com\nkruzer1@aol.com\n\nbonniedelaneyMK@gmail.com\nmdempsey99@hotmail.com\ngilphnj@optonline.net\ndorman.pam@gmail.com\nbobdryer@comcast.net\ndelelfilali@yahoo.com\nelice1@comcast.net\nchaz0208@gmail.com\npffalcone@gmail.com\nmwfaure2@gmail.com\nrob1353@aol.com\ngeojoelle@outlook.com\nCharlie_Friedman@yahoo.com\nSusanGarretsonFriedman@gmail.com\npfritts001@gmail.com\njfgallagh4@gmail.com\nsgallag111@aol.com\nageld@hotmail.com\nseas@gleizer.net\nguenther76@aol.com\nguthrie.andrew95@gmail.com\nmhfaure26@gmail.com\nrharrison128@gmail.com\njkhcpams@aol.com\ntom@helstern.net\njaque.hoelzer@yahoo.com\ndanekahopper@gmail.com\nlouisehorgan1091@gmail.com\nwendyh0426@gmail.com\nhuddykathleen@gmail.com\nblynnhutchings@gmail.com\nmaryjo.iarussi@yahoo.com\nanjohnso1@yahoo.com\nscottcj1017@yahoo.com\nrkaczynska@gmail.com\nskamp@optonline.net\njjkapoor@yahoo.com\nPete.Kaylor@gmail.com\nspiraln@aol.com\nbobkenny@lawyer.com\nken@kerpez.com\nmichael.killen@me.com\nraykimber@comcast.net\nbethwilliams623@comcast.net\nreg.krock@gmail.com\ngregorykuras@msn.com\ntlawrence1111@gmail.com\nlaythamlaw@gmail.com\ngliano@brookdalecc.edu\ngliano@brookdalecc.edu\nlannalikhova@gmai.com\nSEAS.Jeanine@gmail.com\nlyneelopez@gmail.com\nsailaftermath@hotmail.com\nelainelukacs@hotmail.com\njlynn@jlynnlaw.com\nCeilMancini@gmail.com\njmason90@hotmail.com\nBobbie.McArdle@gmail.com\nnpmcderm@yahoo.com\nblmcderm@verizon.net\nmarkmcmahon08@gmail.com\nmegsandsteve@aol.com\nuny022879@yahoo.com\nmontanamcs@hotmail.com\ntrevormoshett@gmail.com\njm.myjoan@gmail.com\ngnoe@brookdalecc.edu\nsvetlananov@gmail.com\nrory570@gmail.com\nkotarookada11@gmail.com\nj.patrouch@gmail.com\ncpelican31@aol.com\njfish161@gmail.com\npauloheyman@gmail.com\nrohrman@optimum.net\ncarlruth1@hotmail.com\nkruckdes@verizon.net\nmonicaruiz111@yahoo.com\npaulsakson@comcast.net\nssallamack@comcast.net\ndrtsalmon@aol.com\nrsantiago319@gmail.com\nbws19@hotmail.com\nbws@monmouth.com\nLuke973@verizon.net\njhspinello22@gmail.com\njimspinello@mns.com\nrsprow55@gmail.com\n\nrenestanton@comcast.net\nmcstanton@gmail.com\nwaterview50@comcast.net\nnadine4sail@gmail.com\nmark.danny.lin@gmail.com\nanusavitara@gmail.com\nvtaverna@optonline.net\nmichaelthorz@yahoo.com\nmticse@gmail.com\ndavetimmes@gmail.com\nmlv101@yahoo.com\navalentino65@msn.com\njoan.venezia@hotmail.com\nwhitegreg@att.net\nwojcmich@gmail.com\nrtyanas2000@yahoo.com\ntizyuq6355@yahoo.com\nmzharova@gmail.com"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-11-04T10:04:28.522272-05:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-11-04T10:04:28.522272-05:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Members' Emails"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "89ae0ba4-27ff-0d00-91d1-2caa031b9e8b"
+	}
+}
