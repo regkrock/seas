@@ -25,7 +25,7 @@ BaselineOfSeas >> baseline: spec [
 		^ spec for: #common do: [
 			spec package: 'Seas'.
 			spec package: 'Lcs-Seas'.
-			spec package: 'Lcs-SeasUI'.
+			"spec package: 'Lcs-SeasUI'."
 			"spec
 				baseline: 'BaseLineOfLcsBase'.
 					with: [ spec repository: 'github://j-brant/SmaCC' ];"
