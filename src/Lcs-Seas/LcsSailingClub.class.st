@@ -15,7 +15,6 @@ LcsSailingClub class >> commodoreSlotDefinition [
 
 { #category : #accessing }
 LcsSailingClub >> commodore [
-
 	^self slotVarNamed: 'commodore'
 ]
 
