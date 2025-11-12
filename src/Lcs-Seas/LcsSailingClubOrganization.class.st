@@ -1,5 +1,5 @@
 Class {
-	#name : #LcsSailingClub,
+	#name : #LcsSailingClubOrganization,
 	#superclass : #LcsOrganization,
 	#instVars : [
 		'commodore'
@@ -8,17 +8,17 @@ Class {
 }
 
 { #category : #accessing }
-LcsSailingClub class >> commodoreSlotDefinition [
+LcsSailingClubOrganization class >> commodoreSlotDefinition [
 	<slotDefinition>
 	^LcsCommodoreSlot new
 ]
 
 { #category : #accessing }
-LcsSailingClub >> commodore [
+LcsSailingClubOrganization >> commodore [
 	^self slotVarNamed: 'commodore'
 ]
 
 { #category : #accessing }
-LcsSailingClub >> commodore: anObject [ 
+LcsSailingClubOrganization >> commodore: anObject [ 
 	self slotVarNamed: 'commodore' put: anObject
 ]

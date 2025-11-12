@@ -66,14 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-10-25T13:35:20.592381-04:00"
+						"dateAndTimeString" : "2025-11-12T09:21:33.896141-05:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "KYkD5n7NDQCNWCM+D/B9Mg=="
 				},
-				"code" : "address := LcsAddressExamples usaAddress\r\t\t\t\tstreetNumber: '12';\r\t\t\t\tstreetName: 'Any Street';\r\t\t\t\tcity: 'Monroe';\r\t\t\t\tprovince: 'NJ';\r\t\t\t\tpostCode: '08831';\r\t\t\t\tyourself.\r\"Location fails on creation - wants to belong to a global collection and one does not exist\"\rlocation := LcsLocation new\r\t\t\t\tlocationName: 'abc';\r\t\t\t\taddress: address.\rseasNational := LcsSailingClub new\r\t\t\t\t\torganizationName: 'Seas National';\r\t\t\t\t\tlocation: location;\r\t\t\t\t\tcommodore: 'Karen Ruckdeschel';\r\t\t\t\t\tyourself.\r\t\t\t\t\t\r"
+				"code" : "address := LcsAddressExamples usaAddress\r\t\t\t\tstreetNumber: '12';\r\t\t\t\tstreetName: 'Any Street';\r\t\t\t\tcity: 'Monroe';\r\t\t\t\tprovince: 'NJ';\r\t\t\t\tpostCode: '08831';\r\t\t\t\tyourself.\r\"Location fails on creation - wants to belong to a global collection and one does not exist\"\rlocation := LcsLocation new\r\t\t\t\tlocationName: 'abc';\r\t\t\t\taddress: address.\rseasNational := LcsSailingClubOrganization new\r\t\t\t\t\torganizationName: 'Seas National';\r\t\t\t\t\tlocation: location;\r\t\t\t\t\tcommodore: 'Karen Ruckdeschel';\r\t\t\t\t\tyourself.\r\t\t\t\t\t\r"
 			}
 		]
 	},
