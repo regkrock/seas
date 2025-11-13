@@ -1,10 +1,10 @@
 Class {
-	#name : #LcsSilingCLubRunningTestCase,
+	#name : #LcsSailingClubRunningTestCase,
 	#superclass : #LcsTestWithTestSystemSetUpForTest,
 	#category : #'Lcs-SeasTests-Tests'
 }
 
 { #category : #running }
-LcsSilingCLubRunningTestCase >> setupSunitSystem [
+LcsSailingClubRunningTestCase >> setupSunitSystem [
 	LcsSailingClub new
 ]

@@ -7,7 +7,7 @@ Class {
 	#category : #'Lcs-Seas-Core'
 }
 
-{ #category : #accessing }
+{ #category : #'slot definitions' }
 LcsSailingClubOrganization class >> commodoreSlotDefinition [
 	<slotDefinition>
 	^LcsCommodoreSlot new
