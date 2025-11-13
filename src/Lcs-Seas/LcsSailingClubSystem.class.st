@@ -1,27 +1,27 @@
 Class {
-	#name : #LcsSailingClub,
+	#name : #LcsSailingClubSystem,
 	#superclass : #LcsSystem,
 	#category : #'Lcs-Seas-Core'
 }
 
 { #category : #'slot definitions' }
-LcsSailingClub class >> configurationSlotDefinition [
+LcsSailingClubSystem class >> configurationSlotDefinition [
 	<slotDefinition>
 	^ self configurationSlotDefinitionOn: self moduleConfigurationClass
 ]
 
 { #category : #configuration }
-LcsSailingClub class >> defaultModuleName [
-	^ 'Sailing Club'
+LcsSailingClubSystem class >> defaultModuleName [
+	^ 'Sailing Club System'
 ]
 
 { #category : #'generated method' }
-LcsSailingClub class >> moduleConfigurationClass [
-	^ LcsSailingClubConfiguration
+LcsSailingClubSystem class >> moduleConfigurationClass [
+	^ LcsSailingClubSystemConfiguration
 ]
 
 { #category : #'slot model' }
-LcsSailingClub >> systemDomainClasses [
+LcsSailingClubSystem >> systemDomainClasses [
 	| collection |
 	collection := super systemDomainClasses.
 	self addClasses: self class package definedClasses to: collection.
