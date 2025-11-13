@@ -25,7 +25,7 @@ BaselineOfSeas >> baseline: spec [
 		^ spec for: #common do: [
 			spec package: 'Seas'.
 			spec package: 'Lcs-Seas'.
-			spec package: 'Lcs-SeasTesting'.
+			spec package: 'Lcs-SeasTests'.
 			"spec package: 'Lcs-SeasUI'."
 		]
 ]
