@@ -27,12 +27,13 @@ LcsSailingClubSystem class >> moduleConfigurationClass [
 LcsSailingClubSystem class >> organizationSlotDefinition [
 	<slotDefinition>
 	^ LcsDomainObjectSlot new
-		slotName: 'organization';
-		slotTypes: (OrderedCollection with: LcsSailingClubOrganization);
-		addPostUpdateAction: (LcsUpdateAction new
-			actionBlock: [ :value :domainObject :oldValue | domainObject system legalEntitiesModule add: value ];
-			description: 'Add organization to the organizations collection');
-		yourself
+			slotName: 'organization';
+			slotTypes: (OrderedCollection with: LcsSailingClubOrganization);
+			addPostUpdateAction: (LcsUpdateAction new
+				actionBlock: [ :value :domainObject :oldValue | 
+					self currentUnitOfWork addPendingAddOf: value to: domainObject legalEntitiesModule organizations ];
+				description: 'Add organization to the organizations collection');
+			yourself
 ]
 
 { #category : #accessing }
