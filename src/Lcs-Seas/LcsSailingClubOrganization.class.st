@@ -13,6 +13,12 @@ LcsSailingClubOrganization class >> commodoreSlotDefinition [
 	^LcsCommodoreSlot new
 ]
 
+{ #category : #'slot definitions' }
+LcsSailingClubOrganization class >> parentSlotDefinition [
+	<slotDefinition>
+	^ LcsParentSlot new
+]
+
 { #category : #accessing }
 LcsSailingClubOrganization >> commodore [
 	^self slotVarNamed: 'commodore'
