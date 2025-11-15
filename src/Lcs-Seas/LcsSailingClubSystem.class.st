@@ -2,7 +2,8 @@ Class {
 	#name : #LcsSailingClubSystem,
 	#superclass : #LcsSystem,
 	#instVars : [
-		'organization'
+		'organization',
+		'members'
 	],
 	#category : #'Lcs-Seas-Core'
 }
@@ -16,6 +17,16 @@ LcsSailingClubSystem class >> configurationSlotDefinition [
 { #category : #configuration }
 LcsSailingClubSystem class >> defaultModuleName [
 	^ 'Sailing Club System'
+]
+
+{ #category : #'slot definitions' }
+LcsSailingClubSystem class >> membersSlotDefinition [
+	<slotDefinition>
+	^ LcsGlobalCollectionSlot new
+			addSlotType: LcsMembers;
+			addCollectionMemberType: LcsMember;
+			slotName: 'members';
+			yourself
 ]
 
 { #category : #'generated method' }
@@ -34,6 +45,16 @@ LcsSailingClubSystem class >> organizationSlotDefinition [
 					self currentUnitOfWork addPendingAddOf: value to: domainObject legalEntitiesModule organizations ];
 				description: 'Add organization to the organizations collection');
 			yourself
+]
+
+{ #category : #accessing }
+LcsSailingClubSystem >> members [
+	^ self slotVarNamed: 'members'
+]
+
+{ #category : #accessing }
+LcsSailingClubSystem >> members: anObject [
+	self slotVarNamed: 'members' put: anObject
 ]
 
 { #category : #accessing }
