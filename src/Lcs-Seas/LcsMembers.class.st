@@ -1,5 +1,5 @@
 Class {
 	#name : #LcsMembers,
 	#superclass : #LcsDomainCollection,
-	#category : #'Lcs-Seas'
+	#category : #'Lcs-Seas-Core'
 }

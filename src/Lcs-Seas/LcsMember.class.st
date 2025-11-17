@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'person'
 	],
-	#category : #'Lcs-Seas'
+	#category : #'Lcs-Seas-Core'
 }
 
 { #category : #'slot definitions' }
@@ -23,7 +23,7 @@ LcsMember class >> personSlotDefinition [
 	<slotDefinition>
 	^ LcsMemberOfGlobalCollectionSlot new
 			slotName: 'person';
-			addSlotType: LcsPerson;
+			addSlotType: LcsBasePerson;
 			collectionSlotName: 'persons';
 			collectionSlotModuleName: 'Legal Entities Module';
 			yourself

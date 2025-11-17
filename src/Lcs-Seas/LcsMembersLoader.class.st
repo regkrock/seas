@@ -1,7 +1,7 @@
 Class {
 	#name : #LcsMembersLoader,
 	#superclass : #LcsObjectsLoader,
-	#category : #'Lcs-Seas'
+	#category : #'Lcs-Seas-Core'
 }
 
 { #category : #data }
