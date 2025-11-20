@@ -1,10 +1,21 @@
 Class {
-	#name : #LcsSailingClubOrganizationExamples,
-	#superclass : #LcsObjectExamples,
-	#category : #'Lcs-SeasTests-Examples'
+	#name : 'LcsSailingClubOrganizationExamples',
+	#superclass : 'LcsObjectExamples',
+	#category : 'Lcs-SeasTests-Examples',
+	#package : 'Lcs-SeasTests',
+	#tag : 'Examples'
 }
 
-{ #category : #examples }
+{ #category : 'examples' }
+LcsSailingClubOrganizationExamples >> executiveCommittee [
+	<gtExample>
+	| organization |
+	organization := self seasMonmouthOrganization.
+	LcsCommittee new.
+	^ organization
+]
+
+{ #category : 'examples' }
 LcsSailingClubOrganizationExamples >> seasMonmouthOrganization [
 	<gtExample>
 	| organization |
