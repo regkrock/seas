@@ -1,15 +1,17 @@
 Class {
-	#name : #LcsGoodsOrService,
-	#superclass : #LcsDomainObject,
+	#name : 'LcsGoodsOrService',
+	#superclass : 'LcsDomainObject',
 	#instVars : [
 		'description',
 		'availableDate',
 		'endedDate'
 	],
-	#category : #'Lcs-Seas-Core'
+	#category : 'Lcs-Seas-Core',
+	#package : 'Lcs-Seas',
+	#tag : 'Core'
 }
 
-{ #category : #'slot definitions' }
+{ #category : 'slot definitions' }
 LcsGoodsOrService class >> availableDateSlotDefinition [
 	<slotDefinition>
 	^ LcsDateSlot new
@@ -18,7 +20,7 @@ LcsGoodsOrService class >> availableDateSlotDefinition [
 			yourself
 ]
 
-{ #category : #'slot definitions' }
+{ #category : 'slot definitions' }
 LcsGoodsOrService class >> descriptionSlotDefinition [
 	<slotDefinition>
 	^ LcsStringSlot new
@@ -26,7 +28,7 @@ LcsGoodsOrService class >> descriptionSlotDefinition [
 			yourself
 ]
 
-{ #category : #'slot definitions' }
+{ #category : 'slot definitions' }
 LcsGoodsOrService class >> endedDateSlotDefinition [
 	<slotDefinition>
 	^ LcsDateSlot new
@@ -35,32 +37,32 @@ LcsGoodsOrService class >> endedDateSlotDefinition [
 			yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsGoodsOrService >> availableDate [
 	^ self slotVarNamed: 'availableDate'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsGoodsOrService >> availableDate: anObject [
 	self slotVarNamed: 'availableDate' put: anObject
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsGoodsOrService >> description [
 	^ self slotVarNamed: 'description'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsGoodsOrService >> description: anObject [
 	self slotVarNamed: 'description' put: anObject
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsGoodsOrService >> endedDate [
 	^ self slotVarNamed: 'endedDate'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsGoodsOrService >> endedDate: anObject [
 	self slotVarNamed: 'endedDate' put: anObject
 ]

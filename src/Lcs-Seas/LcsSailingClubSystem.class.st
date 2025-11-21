@@ -1,34 +1,36 @@
 Class {
-	#name : #LcsSailingClubSystem,
-	#superclass : #LcsSystem,
+	#name : 'LcsSailingClubSystem',
+	#superclass : 'LcsSystem',
 	#instVars : [
 		'organization'
 	],
-	#category : #'Lcs-Seas-Core'
+	#category : 'Lcs-Seas-Core',
+	#package : 'Lcs-Seas',
+	#tag : 'Core'
 }
 
-{ #category : #'slot definitions' }
+{ #category : 'slot definitions' }
 LcsSailingClubSystem class >> configurationSlotDefinition [
 	<slotDefinition>
 	^ self configurationSlotDefinitionOn: self moduleConfigurationClass
 ]
 
-{ #category : #configuration }
+{ #category : 'configuration' }
 LcsSailingClubSystem class >> defaultModuleName [
 	^ 'Sailing Club System'
 ]
 
-{ #category : #'generated method' }
+{ #category : 'generated method' }
 LcsSailingClubSystem class >> moduleConfigurationClass [
 	^ LcsSailingClubSystemConfiguration
 ]
 
-{ #category : #'slot definitions' }
+{ #category : 'slot definitions' }
 LcsSailingClubSystem class >> organizationSlotDefinition [
 	<slotDefinition>
 	^ LcsDomainObjectSlot new
 			slotName: 'organization';
-			slotTypes: (OrderedCollection with: LcsSailingClubOrganization);
+			addSlotType: LcsSailingClubOrganization;
 			addPostUpdateAction: (LcsUpdateAction new
 				actionBlock: [ :value :domainObject :oldValue | 
 					self currentUnitOfWork addPendingAddOf: value to: domainObject legalEntitiesModule organizations ];
@@ -36,17 +38,17 @@ LcsSailingClubSystem class >> organizationSlotDefinition [
 			yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsSailingClubSystem >> organization [
 	^ self slotVarNamed: 'organization'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsSailingClubSystem >> organization: anObject [
 	self slotVarNamed: 'organization' put: anObject
 ]
 
-{ #category : #'slot model' }
+{ #category : 'slot model' }
 LcsSailingClubSystem >> systemDomainClasses [
 	| collection |
 	collection := super systemDomainClasses.

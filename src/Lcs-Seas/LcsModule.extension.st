@@ -1,6 +1,6 @@
-Extension { #name : #LcsModule }
+Extension { #name : 'LcsModule' }
 
-{ #category : #'*Lcs-Seas' }
+{ #category : '*Lcs-Seas' }
 LcsModule >> sailingClubSystem [
 	^ self moduleNamed: 'Sailing Club System'
 ]

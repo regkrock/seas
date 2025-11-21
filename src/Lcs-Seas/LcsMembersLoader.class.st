@@ -1,15 +1,17 @@
 Class {
-	#name : #LcsMembersLoader,
-	#superclass : #LcsObjectsLoader,
-	#category : #'Lcs-Seas-Core'
+	#name : 'LcsMembersLoader',
+	#superclass : 'LcsObjectsLoader',
+	#category : 'Lcs-Seas-Core',
+	#package : 'Lcs-Seas',
+	#tag : 'Core'
 }
 
-{ #category : #data }
+{ #category : 'data' }
 LcsMembersLoader >> data [
 	^ ''
 ]
 
-{ #category : #configuration }
+{ #category : 'configuration' }
 LcsMembersLoader >> targetClass [
 	^ LcsMember
 ]

@@ -1,20 +1,22 @@
 Class {
-	#name : #LcsSailingClubOrganization,
-	#superclass : #LcsOrganization,
+	#name : 'LcsSailingClubOrganization',
+	#superclass : 'LcsInternalOrganization',
 	#instVars : [
 		'commodore',
 		'members'
 	],
-	#category : #'Lcs-Seas-Core'
+	#category : 'Lcs-Seas-Core',
+	#package : 'Lcs-Seas',
+	#tag : 'Core'
 }
 
-{ #category : #'slot definitions' }
+{ #category : 'slot definitions' }
 LcsSailingClubOrganization class >> commodoreSlotDefinition [
 	<slotDefinition>
 	^LcsCommodoreSlot new
 ]
 
-{ #category : #'slot definitions' }
+{ #category : 'slot definitions' }
 LcsSailingClubOrganization class >> membersSlotDefinition [
 	<slotDefinition>
 	^ LcsLocalCollectionSlot new
@@ -25,28 +27,28 @@ LcsSailingClubOrganization class >> membersSlotDefinition [
 			yourself
 ]
 
-{ #category : #'slot definitions' }
+{ #category : 'slot definitions' }
 LcsSailingClubOrganization class >> parentSlotDefinition [
 	<slotDefinition>
 	^ LcsParentSlot new
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsSailingClubOrganization >> commodore [
 	^self slotVarNamed: 'commodore'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsSailingClubOrganization >> commodore: anObject [ 
 	self slotVarNamed: 'commodore' put: anObject
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsSailingClubOrganization >> members [
 	^ self slotVarNamed: 'members'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsSailingClubOrganization >> members: anObject [
 	self slotVarNamed: 'members' put: anObject
 ]

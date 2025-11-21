@@ -1,13 +1,15 @@
 Class {
-	#name : #LcsMember,
-	#superclass : #LcsDomainObject,
+	#name : 'LcsMember',
+	#superclass : 'LcsDomainObject',
 	#instVars : [
 		'person'
 	],
-	#category : #'Lcs-Seas-Core'
+	#category : 'Lcs-Seas-Core',
+	#package : 'Lcs-Seas',
+	#tag : 'Core'
 }
 
-{ #category : #'slot definitions' }
+{ #category : 'slot definitions' }
 LcsMember class >> parentSlotDefinition [
 	<slotDefinition>
 	^ LcsGlobalCollectionReferenceSlot new
@@ -18,7 +20,7 @@ LcsMember class >> parentSlotDefinition [
 			yourself
 ]
 
-{ #category : #'slot definitions' }
+{ #category : 'slot definitions' }
 LcsMember class >> personSlotDefinition [
 	<slotDefinition>
 	^ LcsMemberOfGlobalCollectionSlot new
@@ -29,12 +31,12 @@ LcsMember class >> personSlotDefinition [
 			yourself
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsMember >> person [
 	^ self slotVarNamed: 'person'
 ]
 
-{ #category : #accessing }
+{ #category : 'accessing' }
 LcsMember >> person: anObject [
 	self slotVarNamed: 'person' put: anObject
 ]
