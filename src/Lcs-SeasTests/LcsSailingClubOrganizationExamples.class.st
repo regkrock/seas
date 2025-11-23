@@ -9,9 +9,17 @@ Class {
 { #category : 'examples' }
 LcsSailingClubOrganizationExamples >> executiveCommittee [
 	<gtExample>
-	| organization |
+	| organization steeringCommitte |
 	organization := self seasMonmouthOrganization.
-	LcsCommittee new.
+	steeringCommitte := LcsSteeringCommittee new.
+	self assert: steeringCommitte parent isNil.
+	
+	"Need to add this manually to the collection since it is a local collection."
+	organization committees add: steeringCommitte.
+	
+	self assert: (organization committees includes: steeringCommitte).
+	self assert: steeringCommitte parent equals: organization committees.
+	
 	^ organization
 ]
 
@@ -28,4 +36,18 @@ LcsSailingClubOrganizationExamples >> seasMonmouthOrganization [
 	self assert: organization legalName = 'The Society for the Education of American Sailors, Inc.'.
 	self assert: organization fullName = 'Seas Monmouth'.
 	^ organization 
+]
+
+{ #category : 'examples' }
+LcsSailingClubOrganizationExamples >> seasMonmouthOrganizationWithMembers [
+	<gtExample>
+	| organization foundPerson person1 person2 |
+	organization := self seasMonmouthOrganization.
+	person1 := LcsPersonExamples new johnDoe.
+	self assert: (organization hasContactWithFirstName: 'John' surname: 'Doe').
+	foundPerson := organization contactWithFirstName: 'John' surname: 'Doe'.
+	self assert: foundPerson firstName equals: 'John'.
+	self assert: foundPerson surname equals: 'Doe'.
+	person2 := LcsPersonExamples new samSmith.
+	^ organization
 ]
