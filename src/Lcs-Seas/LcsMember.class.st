@@ -11,24 +11,24 @@ Class {
 
 { #category : 'slot definitions' }
 LcsMember class >> parentSlotDefinition [
-	<slotDefinition>
+	<accessorSlotDefinition>
 	^ LcsGlobalCollectionReferenceSlot new
-			addSlotType: LcsMembers;
-			slotName: 'parent';
-			collectionSlotName: 'members';
-			collectionSlotModuleName: 'Sailing Club System';
-			yourself
+		addSlotType: LcsMembers;
+		slotName: 'parent';
+		collectionSlotName: 'members';
+		collectionSlotModuleName: 'Sailing Club System';
+		yourself
 ]
 
 { #category : 'slot definitions' }
 LcsMember class >> personSlotDefinition [
-	<slotDefinition>
+	<accessorSlotDefinition>
 	^ LcsMemberOfGlobalCollectionSlot new
-			slotName: 'person';
-			addSlotType: LcsBasePerson;
-			collectionSlotName: 'persons';
-			collectionSlotModuleName: 'Legal Entities Module';
-			yourself
+		slotName: 'person';
+		addSlotType: LcsBasePerson;
+		collectionSlotName: 'persons';
+		collectionSlotModuleName: 'Legal Entities Module';
+		yourself
 ]
 
 { #category : 'accessing' }

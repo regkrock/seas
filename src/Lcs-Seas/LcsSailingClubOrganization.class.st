@@ -12,24 +12,24 @@ Class {
 
 { #category : 'slot definitions' }
 LcsSailingClubOrganization class >> commodoreSlotDefinition [
-	<slotDefinition>
-	^LcsCommodoreSlot new
+	<accessorSlotDefinition>
+	^ LcsCommodoreSlot new
 ]
 
 { #category : 'slot definitions' }
 LcsSailingClubOrganization class >> membersSlotDefinition [
-	<slotDefinition>
+	<accessorSlotDefinition>
 	^ LcsLocalCollectionSlot new
-			slotName: 'members';
-			addSlotType: LcsMembers;
-			addCollectionMemberType: LcsMember;
-			collectionClass: IdentitySet;
-			yourself
+		slotName: 'members';
+		addSlotType: LcsMembers;
+		addCollectionMemberType: LcsMember;
+		collectionClass: IdentitySet;
+		yourself
 ]
 
 { #category : 'slot definitions' }
 LcsSailingClubOrganization class >> parentSlotDefinition [
-	<slotDefinition>
+	<accessorSlotDefinition>
 	^ LcsParentSlot new
 ]
 

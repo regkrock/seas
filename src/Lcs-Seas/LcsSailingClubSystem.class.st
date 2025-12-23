@@ -11,7 +11,7 @@ Class {
 
 { #category : 'slot definitions' }
 LcsSailingClubSystem class >> configurationSlotDefinition [
-	<slotDefinition>
+	<accessorSlotDefinition>
 	^ self configurationSlotDefinitionOn: self moduleConfigurationClass
 ]
 
@@ -27,15 +27,17 @@ LcsSailingClubSystem class >> moduleConfigurationClass [
 
 { #category : 'slot definitions' }
 LcsSailingClubSystem class >> organizationSlotDefinition [
-	<slotDefinition>
+	<accessorSlotDefinition>
 	^ LcsDomainObjectSlot new
-			slotName: 'organization';
-			addSlotType: LcsSailingClubOrganization;
-			addPostUpdateAction: (LcsUpdateAction new
+		slotName: 'organization';
+		addSlotType: LcsSailingClubOrganization;
+		addPostUpdateAction: (LcsUpdateAction new
 				actionBlock: [ :value :domainObject :oldValue | 
-					self currentUnitOfWork addPendingAddOf: value to: domainObject legalEntitiesModule organizations ];
+					self currentUnitOfWork
+						addPendingAddOf: value
+						to: domainObject legalEntitiesModule organizations ];
 				description: 'Add organization to the organizations collection');
-			yourself
+		yourself
 ]
 
 { #category : 'accessing' }

@@ -13,28 +13,32 @@ Class {
 
 { #category : 'slot definitions' }
 LcsGoodsOrService class >> availableDateSlotDefinition [
-	<slotDefinition>
+	<accessorSlotDefinition>
 	^ LcsDateSlot new
-			slotName: 'availableDate';
-			required: true;
-			yourself
+		slotName: 'availableDate';
+		required: true;
+		yourself
 ]
 
 { #category : 'slot definitions' }
 LcsGoodsOrService class >> descriptionSlotDefinition [
-	<slotDefinition>
+	<accessorSlotDefinition>
 	^ LcsStringSlot new
-			slotName: 'description';
-			yourself
+		slotName: 'description';
+		yourself
 ]
 
 { #category : 'slot definitions' }
 LcsGoodsOrService class >> endedDateSlotDefinition [
-	<slotDefinition>
+	<accessorSlotDefinition>
 	^ LcsDateSlot new
-			slotName: 'endedDate';
-			initialValueBlock: [ :value :slot | Date newDay: 31 month: 12 year:  2100 ];
-			yourself
+		slotName: 'endedDate';
+		initialValueBlock: [ :value :slot | 
+			Date
+				newDay: 31
+				month: 12
+				year: 2100 ];
+		yourself
 ]
 
 { #category : 'accessing' }

@@ -44,10 +44,10 @@ LcsSailingClubOrganizationExamples >> seasMonmouthOrganizationWithMembers [
 	| organization foundPerson person1 person2 |
 	organization := self seasMonmouthOrganization.
 	person1 := LcsPersonExamples new johnDoe.
-	self assert: (organization hasContactWithFirstName: 'John' surname: 'Doe').
-	foundPerson := organization contactWithFirstName: 'John' surname: 'Doe'.
+	self assert: (organization hasContactWithFirstName: 'John' familyName: 'Doe').
+	foundPerson := organization contactWithFirstName: 'John' familyName: 'Doe'.
 	self assert: foundPerson firstName equals: 'John'.
-	self assert: foundPerson surname equals: 'Doe'.
+	self assert: foundPerson familyName equals: 'Doe'.
 	person2 := LcsPersonExamples new samSmith.
 	^ organization
 ]
