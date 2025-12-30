@@ -12,11 +12,12 @@ Class {
 { #category : 'slot definitions' }
 LcsMember class >> parentSlotDefinition [
 	<accessorSlotDefinition>
-	^ LcsGlobalCollectionReferenceSlot new
+	^ LcsLocalCollectionReferenceSlot new
 		addSlotType: LcsMembers;
 		slotName: 'parent';
+		accessPath: 'organization';
 		collectionSlotName: 'members';
-		collectionSlotModuleName: 'Sailing Club System';
+		collectionSlotModuleName: LcsSailingClubSystem defaultModuleName;
 		yourself
 ]
 
@@ -27,7 +28,7 @@ LcsMember class >> personSlotDefinition [
 		slotName: 'person';
 		addSlotType: LcsBasePerson;
 		collectionSlotName: 'persons';
-		collectionSlotModuleName: 'Legal Entities Module';
+		collectionSlotModuleName: LcsLegalEntitiesModule defaultModuleName;
 		yourself
 ]
 

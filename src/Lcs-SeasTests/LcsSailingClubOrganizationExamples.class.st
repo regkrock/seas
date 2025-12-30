@@ -28,6 +28,8 @@ LcsSailingClubOrganizationExamples >> seasMonmouthOrganization [
 	<gtExample>
 	| organization |
 	self ensureCurrentSystemIsSailingClubSystem.
+	self assert: LcsMember hasSlotModel.
+	self assert: LcsMembers hasSlotModel.
 	organization := self currentSystem organization.
 	organization
 		organizationName: 'Seas Monmouth';
@@ -41,13 +43,20 @@ LcsSailingClubOrganizationExamples >> seasMonmouthOrganization [
 { #category : 'examples' }
 LcsSailingClubOrganizationExamples >> seasMonmouthOrganizationWithMembers [
 	<gtExample>
-	| organization foundPerson person1 person2 |
+	| organization foundPerson johnDoe samSmith samSmithMembership |
 	organization := self seasMonmouthOrganization.
-	person1 := LcsPersonExamples new johnDoe.
+	johnDoe := LcsPersonExamples new johnDoe.
 	self assert: (organization hasContactWithFirstName: 'John' familyName: 'Doe').
 	foundPerson := organization contactWithFirstName: 'John' familyName: 'Doe'.
 	self assert: foundPerson firstName equals: 'John'.
 	self assert: foundPerson familyName equals: 'Doe'.
-	person2 := LcsPersonExamples new samSmith.
+	samSmith := LcsPersonExamples new samSmith.
+	self assert: LcsMember hasSlotModel.
+	self assert: LcsMembers hasSlotModel.
+	samSmithMembership := LcsMember new
+					person: samSmith;
+					yourself.
+	organization members add: samSmithMembership.
+	self assert: (organization members includes: samSmithMembership).
 	^ organization
 ]
