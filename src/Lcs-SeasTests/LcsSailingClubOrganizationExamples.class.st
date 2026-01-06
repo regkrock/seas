@@ -10,7 +10,7 @@ Class {
 LcsSailingClubOrganizationExamples >> executiveCommittee [
 	<gtExample>
 	| organization steeringCommitte |
-	organization := self seasMonmouthOrganization.
+	organization := self seasMonmouthOrganizationWithMembers.
 	steeringCommitte := LcsSteeringCommittee new.
 	self assert: steeringCommitte parent isNil.
 	
@@ -20,7 +20,25 @@ LcsSailingClubOrganizationExamples >> executiveCommittee [
 	self assert: (organization committees includes: steeringCommitte).
 	self assert: steeringCommitte parent equals: organization committees.
 	
-	^ organization
+	^ steeringCommitte
+]
+
+{ #category : 'examples' }
+LcsSailingClubOrganizationExamples >> organization [
+	^ self currentSystem organization
+]
+
+{ #category : 'examples' }
+LcsSailingClubOrganizationExamples >> populatedExecutiveCommittee [
+	<gtExample>
+	| organization executiveCommittee commodore samSmith |
+	executiveCommittee := self executiveCommittee.
+	organization := self organization.
+	samSmith := organization activeMemberWithFirstName: 'Sam' familyName: 'Smith'.
+	commodore := LcsCommitteeMember new member: samSmith.
+	executiveCommittee commodore: commodore.
+
+	^ executiveCommittee
 ]
 
 { #category : 'examples' }
@@ -30,14 +48,16 @@ LcsSailingClubOrganizationExamples >> seasMonmouthOrganization [
 	self ensureCurrentSystemIsSailingClubSystem.
 	self assert: LcsMember hasSlotModel.
 	self assert: LcsMembers hasSlotModel.
-	organization := self currentSystem organization.
+	organization := self organization.
 	organization
 		organizationName: 'Seas Monmouth';
 		legalName: 'The Society for the Education of American Sailors, Inc.';
-		mainAddress: (LcsAddressExamples new seasMonmouthAddress).
-	self assert: organization legalName = 'The Society for the Education of American Sailors, Inc.'.
+		mainAddress: LcsAddressExamples new seasMonmouthAddress.
+	self
+		assert: organization legalName
+				= 'The Society for the Education of American Sailors, Inc.'.
 	self assert: organization fullName = 'Seas Monmouth'.
-	^ organization 
+	^ organization
 ]
 
 { #category : 'examples' }

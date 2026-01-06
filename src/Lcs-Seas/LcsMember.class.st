@@ -32,6 +32,17 @@ LcsMember class >> personSlotDefinition [
 		yourself
 ]
 
+{ #category : 'testing' }
+LcsMember >> isActive [
+	"This is a stub. Need to add logic to determine if a member is active"
+	^ true
+]
+
+{ #category : 'testing' }
+LcsMember >> isActiveWithFirstName: aFirstName familyName: aFamilyName [ 
+	^ self isActive and: [ self person hasFirstName: aFirstName familyName: aFamilyName ]
+]
+
 { #category : 'accessing' }
 LcsMember >> person [
 	^ self slotVarNamed: 'person'

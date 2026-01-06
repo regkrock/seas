@@ -1,5 +1,5 @@
 Class {
-	#name : 'LcsSailingClubSystemRunningTestCase',
+	#name : 'LcsSailingClubSystemRunningTest',
 	#superclass : 'LcsTestWithTestSystemSetUpForTest',
 	#category : 'Lcs-SeasTests-Tests',
 	#package : 'Lcs-SeasTests',
@@ -7,6 +7,6 @@ Class {
 }
 
 { #category : 'running' }
-LcsSailingClubSystemRunningTestCase >> setupSunitSystem [
+LcsSailingClubSystemRunningTest >> setupSunitSystem [
 	LcsSailingClubSystem new
 ]

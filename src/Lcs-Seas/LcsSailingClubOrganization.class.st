@@ -33,6 +33,11 @@ LcsSailingClubOrganization class >> parentSlotDefinition [
 	^ LcsParentSlot new
 ]
 
+{ #category : 'querying' }
+LcsSailingClubOrganization >> activeMemberWithFirstName: aFirstName  familyName: aFamilyName [
+	^ self members activeMemberWithFirstName: aFirstName  familyName: aFamilyName
+]
+
 { #category : 'accessing' }
 LcsSailingClubOrganization >> commodore [
 	^self slotVarNamed: 'commodore'
