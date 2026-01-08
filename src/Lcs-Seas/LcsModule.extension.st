@@ -4,3 +4,8 @@ Extension { #name : 'LcsModule' }
 LcsModule >> sailingClubSystem [
 	^ self moduleNamed: 'Sailing Club System'
 ]
+
+{ #category : '*Lcs-Seas' }
+LcsModule >> seasModule [
+	^ self moduleNamed: 'Seas Module'
+]
