@@ -12,8 +12,7 @@ Class {
 { #category : 'slot definitions' }
 LcsMembers class >> unknownInstanceSlotDefinition [
 	<accessorSlotDefinition>
-	^ LcsDomainObjectSlot new
-			slotName: 'unknownInstance';
+	^ LcsUnknownInstanceSlot new
 			addSlotType: LcsMember;
 			initialValueBlock: [ :parentDomainObject :slot | 
 				slot slotTypes any new 
