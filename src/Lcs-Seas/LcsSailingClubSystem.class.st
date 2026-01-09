@@ -22,6 +22,11 @@ LcsSailingClubSystem class >> moduleConfigurationClass [
 	^ LcsSailingClubSystemConfiguration
 ]
 
+{ #category : 'convenience' }
+LcsSailingClubSystem >> organization [
+	^ self seasModule organization
+]
+
 { #category : 'slot model' }
 LcsSailingClubSystem >> systemDomainClasses [
 	| collection |

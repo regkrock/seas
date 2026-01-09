@@ -45,6 +45,14 @@ LcsSeasModule class >> owningModules [
 	<owningModule: 'LcsSailingClubSystem' priority: 20>
 ]
 
+{ #category : 'slot model - install' }
+LcsSeasModule class >> systemModelDependentPackages [
+	"This ensures domain classes in logically dependent packages are included"
+	^ super systemModelDependentPackages
+		add: 'Lcs-InternalOrganization' asPackage;
+		yourself
+]
+
 { #category : 'accessing' }
 LcsSeasModule >> organization [
 	^ self slotVarNamed: 'organization'
