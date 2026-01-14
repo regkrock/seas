@@ -16,6 +16,7 @@ LcsMembers class >> unknownInstanceSlotDefinition [
 			addSlotType: LcsMember;
 			initialValueBlock: [ :parentDomainObject :slot | 
 				slot slotTypes any new 
+					parent: parentDomainObject;
 					person: (slot currentSystem legalEntitiesModule persons unknownPerson);
 					yourself ];
 			required: true;
