@@ -11,5 +11,5 @@ LcsCommitteeMemberTest >> testCreation [
 	| committeeMember |
 "	executiveCommittee := LcsSailingClubOrganizationExamples new executiveCommittee."
 	committeeMember := LcsCommitteeMember new.
-	self assert: (committeeMember isKindOf: committeeMember) 
+	self assert: (committeeMember isKindOf: LcsCommitteeMember) 
 ]
