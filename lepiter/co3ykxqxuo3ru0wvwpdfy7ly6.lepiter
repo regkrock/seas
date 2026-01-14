@@ -1,0 +1,187 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-01-14T09:52:29.668327-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-01-14T10:35:39.164211-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8kVZ8uikSBG2FE1mzfMdAQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[Google SEO Funadmentals](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)\n\nGoogle Business Profile Rank\n\t\t- proximity - how far away is the searcher is from the location of the business\n        - categories - at least 2 to 4 categories\n        - services - lots -  \n\t\t- relevance - number of pages - lots of topical relevance in web-site\n\t\t- authority - links to surrounding community organizations/businesses\n    - [You tube video on ranking](https://www.youtube.com/watch?v=ZKZnDORR0ds)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-01-13T09:17:04.008559-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-01-14T09:53:02.67646-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6s0YXMDcR+Gqw+ICH8VcOQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[On Page SEO vs Off-Page Seo](https://www.geeksforgeeks.org/techtips/difference-between-on-page-and-off-page-seo/)\n##On-Page vs Off-Page SEO\n- On-Page SEO focuses on optimizing the content and structure of individual web pages\n\t\t\t\t- Content Quality\n\t\t\t\t- Keyword Optimization\n\t\t\t\t- Meta Tags\n\t\t\t\t- URL structure - ensure clean, user friendly urls with relvant keywords\n\t\t\t\t- Internal Linking - link relevant pages/content\n\t\t\t\t- User Experience  (UX): Optimize load speed, mobile-friendly, and site structure\n\t\t\t\t- Technical - focus on crawlability, indexing, canonical tags, and schma markup\n##Off-Page SEO\t\t\n\t\t\t - Focus of Web Site:\n\t\t\t \t\t\texternal relationships - \n\t\t\t \t\t\treputation -\n\t\t\t \t\t\tauthority -\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-01-14T11:25:32.635466-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-01-14T11:30:03.111535-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "c9guG8pjSpqTVpRTLIvW5Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "####SEO Seas Searches\nThe following are searches that are used to see how ranking occurs\n1) sailing courses in monmouth\n2) learn to sail in monmouth\n3) sailing club locations monmouth\n\nDoes not register:\n1) sailboat sharing clubs near me"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-01-13T08:58:55.757483-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-01-13T09:15:48.188668-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "9LCHIb9NStyr7LIcvYRdKg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "See [Meta tag](https://www.w3schools.com/tags/tag_meta.asp) - W3 Tutorial\n\n{head}\n\t{meta attribute-name = \"value\"}\n{/head}\n\nAttribute-names: charset, description, keywords, author, viewport\n\tex: {meta charset=\"UTF-8\">\n\tex: {meta name=\"description\" content=\"Free Web Tutorials\">\n\tex: {meta name=\"keywords\" content=\"HTML, CSS, Javascript\">\n\tex: {meta name=\"author\" content=\"John Doe\">\n\tex: {name=\"viewport\" content=\"....\">\n\t\n\tex: {meta name=\"robots\" content=\"index, follow\">\n\t\t\t\t\tindex - allow robot to index the page\n\t\t\t\t\tfollow - allow robot to follow the links\n\t\t\t\t\tnoindex - do not index the page\n\t\t\t\t\tnofollow - do not follow the links on the page\n\t\t\t\t\t\n\t"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2026-01-13T08:58:15.388186-05:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2026-01-13T08:58:15.388186-05:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "SEO For SEAS"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "de786037-fdc2-4ca1-886f-15020fc001d6"
+	}
+}
