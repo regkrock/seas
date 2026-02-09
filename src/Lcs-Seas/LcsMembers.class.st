@@ -33,6 +33,11 @@ LcsMembers >> defaultInstance [
 	^ self unknownInstance
 ]
 
+{ #category : 'querying' }
+LcsMembers >> hasActiveMemberWithFirstName: aFirstName familyName: aFamilyName [
+	^ (self activeMemberWithFirstName: aFirstName familyName: aFamilyName) notNil
+]
+
 { #category : 'accessing' }
 LcsMembers >> unknownInstance [
 	^ self slotVarNamed: 'unknownInstance'

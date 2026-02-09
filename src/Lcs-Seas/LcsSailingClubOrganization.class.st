@@ -48,6 +48,11 @@ LcsSailingClubOrganization >> commodore: anObject [
 	self slotVarNamed: 'commodore' put: anObject
 ]
 
+{ #category : 'querying' }
+LcsSailingClubOrganization >> hasActiveMemberWithFirstName: aFirstName  familyName: aFamilyName [
+	^ self members hasActiveMemberWithFirstName: aFirstName  familyName: aFamilyName
+]
+
 { #category : 'accessing' }
 LcsSailingClubOrganization >> members [
 	^ self slotVarNamed: 'members'
@@ -56,4 +61,9 @@ LcsSailingClubOrganization >> members [
 { #category : 'accessing' }
 LcsSailingClubOrganization >> members: anObject [
 	self slotVarNamed: 'members' put: anObject
+]
+
+{ #category : 'querying' }
+LcsSailingClubOrganization >> steeringCommittee [
+	^ self committees findWithOrganizationName: 'Steering Committee'
 ]
