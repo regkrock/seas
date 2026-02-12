@@ -127,7 +127,7 @@ LcsSailingClubOrganizationExamples >> seasMonmouthOrganizationWithMembers [
 LcsSailingClubOrganizationExamples >> seasMonmouthOrganizationWithPersistedMembers [
 	<gtExample>
 	| organization |
-	self currentSystem clearUnitOfWork.
+	self clearUnitOfWork.
 	organization := self seasMonmouthOrganizationWithMembers.
 	self currentSystem applyChanges.
 	self assert: organization committees isEmpty.
