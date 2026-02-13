@@ -27,10 +27,15 @@ LcsSailingClubOrganizationExamples >> executiveCommittee [
 	self assert: steeringCommittee parent isNil.
 	"Need to add this manually to the collection since it is a local collection."
 	organization committees add: steeringCommittee.
+	self assert: steeringCommittee parent notNil.
 	self assert: (organization committees includes: steeringCommittee).
 	self assert: steeringCommittee parent equals: organization committees.
 	self assert: organization steeringCommittee == steeringCommittee.
-	^ organization steeringCommittee.
+	self assert: steeringCommittee commodore title equals: 'Commodore'.
+	self assert: steeringCommittee secretary title equals: 'Secretary'.
+	self assert: steeringCommittee treasurer title equals: 'Treasurer'.
+	self assert: steeringCommittee viceCommodore title equals: 'Vice-Commodore'.
+	^ steeringCommittee.
 ]
 
 { #category : 'examples' }
