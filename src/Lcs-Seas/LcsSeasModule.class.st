@@ -12,7 +12,9 @@ Class {
 { #category : 'slot definitions' }
 LcsSeasModule class >> configurationSlotDefinition [
 	<accessorSlotDefinition>
-	^ self configurationSlotDefinitionOn: self moduleConfigurationClass
+	^ (self configurationSlotDefinitionOn: self moduleConfigurationClass)
+		priority: 10;
+		yourself
 ]
 
 { #category : 'configuration' }
@@ -51,6 +53,12 @@ LcsSeasModule class >> systemModelDependentPackages [
 	^ super systemModelDependentPackages
 		add: 'Lcs-InternalOrganization' asPackage;
 		yourself
+]
+
+{ #category : 'initialize  - load data' }
+LcsSeasModule >> loadData [
+	self organization organizationName: 'Seas Monmouth'.
+	self organization legalName: 'Seas Monmouth Charity'
 ]
 
 { #category : 'accessing' }
