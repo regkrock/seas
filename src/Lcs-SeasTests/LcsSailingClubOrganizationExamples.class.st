@@ -72,7 +72,7 @@ LcsSailingClubOrganizationExamples >> organization [
 { #category : 'examples' }
 LcsSailingClubOrganizationExamples >> populatedExecutiveCommittee [
 	<gtExample>
-	| organization executiveCommittee commodore member |
+	| organization executiveCommittee member |
 	executiveCommittee := self executiveCommittee.
 	organization := self organization.
 	member := organization activeMemberWithFirstName: 'Karen' familyName: 'Ruckdeschel'.
@@ -92,6 +92,7 @@ LcsSailingClubOrganizationExamples >> seasMonmouthOrganization [
 		self organization mainAddress: LcsAddressExamples new seasMonmouthAddress ].
 	self assert: self organization legalName = 'SEAS Monmouth Chapter'.
 	self assert: self organization fullName = 'SEAS Monmouth'.
+	self assert: self organization committees isEmpty.
 	^ self organization
 ]
 
