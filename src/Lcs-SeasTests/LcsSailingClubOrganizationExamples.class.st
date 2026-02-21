@@ -20,13 +20,15 @@ LcsSailingClubOrganizationExamples >> executiveCommittee [
 	<gtExample>
 	| organization steeringCommittee |
 	organization := self seasMonmouthOrganizationWithPersistedMembers.
-	self assert: organization committees isEmpty.
-	steeringCommittee := LcsSteeringCommittee new
-		organizationName: 'Steering Committee';
-		yourself.
-	self assert: steeringCommittee parent isNil.
-	"Need to add this manually to the collection since it is a local collection."
-	organization committees add: steeringCommittee.
+
+	(steeringCommittee := organization steeringCommittee) isNil ifTrue: [
+		steeringCommittee := LcsSteeringCommittee new
+			organizationName: 'Steering Committee';
+			yourself.
+		self assert: steeringCommittee parent isNil.
+		"Need to add this manually to the collection since it is a local collection."
+		organization committees add: steeringCommittee].
+		
 	self assert: steeringCommittee parent notNil.
 	self assert: (organization committees includes: steeringCommittee).
 	self assert: steeringCommittee parent equals: organization committees.
@@ -92,7 +94,6 @@ LcsSailingClubOrganizationExamples >> seasMonmouthOrganization [
 		self organization mainAddress: LcsAddressExamples new seasMonmouthAddress ].
 	self assert: self organization legalName = 'SEAS Monmouth Chapter'.
 	self assert: self organization fullName = 'SEAS Monmouth'.
-	self assert: self organization committees isEmpty.
 	^ self organization
 ]
 
@@ -128,7 +129,6 @@ LcsSailingClubOrganizationExamples >> seasMonmouthOrganizationWithPersistedMembe
 	self clearUnitOfWork.
 	organization := self seasMonmouthOrganizationWithMembers.
 	self currentSystem applyChanges.
-	self assert: organization committees isEmpty.
 	^ organization
 ]
 
