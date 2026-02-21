@@ -57,8 +57,8 @@ LcsSeasModule class >> systemModelDependentPackages [
 
 { #category : 'initialize  - load data' }
 LcsSeasModule >> loadData [
-	self organization organizationName: 'Seas Monmouth'.
-	self organization legalName: 'Seas Monmouth Charity'
+	self organization organizationName: 'SEAS Monmouth'.
+	self organization legalName: 'SEAS Monmouth Chapter'
 ]
 
 { #category : 'accessing' }

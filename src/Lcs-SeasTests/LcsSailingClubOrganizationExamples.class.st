@@ -76,12 +76,8 @@ LcsSailingClubOrganizationExamples >> populatedExecutiveCommittee [
 	executiveCommittee := self executiveCommittee.
 	organization := self organization.
 	member := organization activeMemberWithFirstName: 'Karen' familyName: 'Ruckdeschel'.
-	commodore := LcsCommitteeMember new
-		title: 'Commodore';
-		member: member;
-		yourself.
-	executiveCommittee commodore: commodore.
-	self assert: executiveCommittee commodore == commodore.
+	executiveCommittee commodore member: member.
+	self assert: executiveCommittee commodore member == member.
 	^ executiveCommittee
 ]
 
@@ -92,14 +88,10 @@ LcsSailingClubOrganizationExamples >> seasMonmouthOrganization [
 	self ensureCurrentSystemIsSailingClubSystem.
 	self assert: LcsMember hasSlotModel.
 	self assert: LcsMembers hasSlotModel.
-	self organization organizationName isEmpty ifTrue: [
-		self organization organizationName: 'Seas Monmouth' ].
-	self organization legalName isEmpty ifTrue: [
-		self organization legalName: 'SEAS Monmouth Chapter' ].
 	self organization mainAddress isUnknown ifTrue: [
 		self organization mainAddress: LcsAddressExamples new seasMonmouthAddress ].
-	self assert: self organization legalName equals: 'SEAS Monmouth Chapter'.
-	self assert: self organization fullName = 'Seas Monmouth'.
+	self assert: self organization legalName = 'SEAS Monmouth Chapter'.
+	self assert: self organization fullName = 'SEAS Monmouth'.
 	^ self organization
 ]
 
