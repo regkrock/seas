@@ -1,13 +1,26 @@
 Class {
-	#name : 'LcsSailingClubSystemTest',
-	#superclass : 'LcsAbstractSystemTest',
-	#category : 'Lcs-SeasTests-Tests',
+	#name : 'LcsSailingClubSystemExamples',
+	#superclass : 'LcsBaseSystemExamples',
+	#category : 'Lcs-SeasTests-Examples',
 	#package : 'Lcs-SeasTests',
-	#tag : 'Tests'
+	#tag : 'Examples'
 }
 
+{ #category : 'tests' }
+LcsSailingClubSystemExamples >> sailClubSystem [
+	<gtExample>
+	self ensureCurrentSystemIsSailingClubSystem.
+	self assertModuleConfigured: LcsSecurityModule.
+	self assertModuleConfigured: LcsGeographyModule.
+	self assertModuleConfigured: LcsLegalEntitiesModule.
+	self assertModuleConfigured: LcsCalendarModule.
+	self assertModuleConfigured: LcsSeasModule.
+	self validateOrganization.
+	^ self currentSystem
+]
+
 { #category : 'assertions' }
-LcsSailingClubSystemTest >> assertLegalEntitiesModuleIsConfigured [
+LcsSailingClubSystemExamples >> validateLegalEntitiesModuleIsConfigured [
 	| module |
 	module := self currentSystem legalEntitiesModule.
 	self assert: (module isKindOf: LcsLegalEntitiesModule).
@@ -20,24 +33,12 @@ LcsSailingClubSystemTest >> assertLegalEntitiesModuleIsConfigured [
 	self assert: (LcsPerson slotDefinitionNamed: #dateOfBirth) slotName equals: #dateOfBirth
 ]
 
-{ #category : 'tests' }
-LcsSailingClubSystemTest >> testCreation [
-	self subject: LcsSailingClubSystem new.
-	self assertCurrentSystemSetTo: LcsSailingClubSystem.
-	self assertModuleConfigured: LcsSecurityModule.
-	self assertModuleConfigured: LcsGeographyModule.
-	self assertModuleConfigured: LcsLegalEntitiesModule.
-	self assertModuleConfigured: LcsCalendarModule.
-	self assertModuleConfigured: LcsSeasModule.
-	self validateOrganization
-]
-
 { #category : 'assertions' }
-LcsSailingClubSystemTest >> validateOrganization [
+LcsSailingClubSystemExamples >> validateOrganization [
 	| organization members |
-	organization := self subject organization.
+	organization := self currentSystem organization.
 	members := organization members.
-	self assert: organization parent = self subject seasModule.
+	self assert: organization parent = self currentSystem seasModule.
 	self assert: (members isKindOf: LcsMembers).
 	self assert: (members unknownInstance isKindOf: LcsMember).
 	self assert: members unknownInstance parent == members
