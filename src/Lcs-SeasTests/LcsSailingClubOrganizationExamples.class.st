@@ -1,6 +1,6 @@
 Class {
 	#name : 'LcsSailingClubOrganizationExamples',
-	#superclass : 'LcsObjectExamples',
+	#superclass : 'LcsExamples',
 	#category : 'Lcs-SeasTests-Examples',
 	#package : 'Lcs-SeasTests',
 	#tag : 'Examples'
